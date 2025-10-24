@@ -16,8 +16,7 @@ const DATA = {
   ],
   manoobra: {
     pintura: { label: 'Mano de obra aplicación Pintura impermeabilizante a dos manos', price_per_m2: 1.30, note: 'Desde $1.30 x M2. Previa inspección' },
-    invemanto: { label: 'Mano de obra colocación de Invemanto', price_per_m2: 2.50, note: 'Desde $2.50 x M2. Previa inspección' }
-    
+    invemanto: { label: 'Mano de obra colocación de Invemanto', price_per_m2: 2.50, note: 'Desde $2.50 x M2. Previa inspección' }    
   }
 };
 
