@@ -20,7 +20,7 @@ const DATA = {
   }
 };
 
-const PHONE = '+57XXXXXXXXX'; // Reemplaza por tu número (sin + ni espacios para wa.me, ejemplo: 573001234567)
+const PHONE = '584144415403'; // Reemplaza por tu número (sin + ni espacios para wa.me, ejemplo: 573001234567)
 
 const productoSelect = document.getElementById('producto');
 const presentacionesContainer = document.getElementById('presentaciones-container');
