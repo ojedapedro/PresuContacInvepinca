@@ -35,11 +35,12 @@ function init(){
   renderPresentaciones();
   calcularBtn.addEventListener('click', calcularYEnviar);
 }
-
 function renderPresentaciones() {
   const prod = productoSelect.value;
   presentacionesContainer.innerHTML = '';
   const list = DATA[prod];
+
+  // Renderizar las presentaciones de productos
   list.forEach(item => {
     const div = document.createElement('div');
     div.className = 'presentacion';
@@ -51,28 +52,32 @@ function renderPresentaciones() {
       </div>
       <div class="right">
         <label class="small">Cantidad</label>
-        <input type="number" min="0" value="0" data-id="${item.id}" class="qty" style="width:80px;padding:6px;border-radius:6px;background:#07121a;color:#cfe"/>
+        <input type="number" min="0" value="0" data-id="${item.id}" class="qty"
+          style="width:80px;padding:6px;border-radius:6px;background:#07121a;color:#cfe" />
       </div>
     `;
     presentacionesContainer.appendChild(div);
   });
 
-  // ----- 👇 NUEVO BLOQUE DE MANO DE OBRA -----
+  // ----- NUEVO BLOQUE DE MANO DE OBRA -----
   manoobraSelect.innerHTML = '';
 
-  // Opción 1: con mano de obra (automática)
+  // Opción 1: Con mano de obra
   const mo = DATA.manoobra[prod];
   const opt1 = document.createElement('option');
   opt1.value = JSON.stringify(mo);
   opt1.textContent = `${mo.label} — ${mo.note}`;
   manoobraSelect.appendChild(opt1);
 
-  // Opción 2: sin mano de obra
+  // Opción 2: Sin mano de obra (por defecto)
   const sinMO = { label: 'Sin mano de obra (solo materiales)', price_per_m2: 0, note: 'Costo mano de obra = $0' };
   const opt2 = document.createElement('option');
   opt2.value = JSON.stringify(sinMO);
   opt2.textContent = sinMO.label;
   manoobraSelect.appendChild(opt2);
+
+  // ✅ Establecer como opción por defecto “Sin mano de obra”
+  manoobraSelect.selectedIndex = 1;
 }
 
 
