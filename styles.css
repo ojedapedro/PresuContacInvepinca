@@ -1,0 +1,25 @@
+:root{
+  --bg:#0f1724; /* oscuro tomado del banner */
+  --accent:#00a8a8; /* acento sugerido */
+  --muted:#cbd5e1;
+  --card:#0b1220;
+}
+*{box-sizing:border-box;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#071022);color:var(--muted);min-height:100vh}
+header.hero{display:flex;align-items:center;gap:16px;padding:20px;background:rgba(255,255,255,0.03)}
+header.hero .logo{height:70px}
+.container{max-width:1100px;margin:24px auto;padding:16px}
+h1{margin:0;color:var(--accent)}
+.subtitle{margin:0.2rem 0 0;color:#9fbfc0}
+.iframe-section,.calc,.productos-list{background:var(--card);padding:16px;border-radius:12px;margin-bottom:16px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.row{display:flex;gap:12px;align-items:center;margin:10px 0}
+.row label{min-width:140px}
+.row input[type="number"], .row select{flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:#08121a;color:var(--muted)}
+button#calcular{background:var(--accent);color:#042023;padding:10px 16px;border-radius:10px;border:none;font-weight:600;cursor:pointer}
+.resultado{margin-top:12px;padding:12px;background:#071826;border-radius:8px;color:#e6fff9}
+.presentacion{display:flex;align-items:center;justify-content:space-between;padding:8px;border-radius:8px;margin:8px 0;background:rgba(255,255,255,0.02)}
+.presentacion .left{flex:1}
+.presentacion .right{display:flex;gap:8px;align-items:center}
+.small{font-size:0.9rem;color:#b7d9d9}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+footer{max-width:1100px;margin:0 auto;padding:8px;color:#7fa7a7;text-align:center}

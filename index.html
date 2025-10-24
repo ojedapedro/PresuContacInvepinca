@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invepinca - Impermeabilización</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img class="logo" src="https://i.ibb.co/hJ48PnDC/Banner-moderno-de-INVEPINCA.png" alt="Logo Invepinca" />
+    <h1>Tienda de Impermeabilización - Invepinca</h1>
+    <p class="subtitle">Soluciones en manto e impermeabilizantes elastoméricos</p>
+  </header>
+
+  <main class="container">
+    <section class="iframe-section">
+      <h2>Contacto / WhatsApp</h2>
+      <!-- WhatsForm iframe proporcionado -->
+      <div class="whatsframe">
+        <iframe src="https://whatsform.com/dNFs-4" width="100%" height="600" frameborder="0"></iframe>
+      </div>
+    </section>
+
+    <section class="calc">
+      <h2>Calculadora de presupuesto</h2>
+      <p>Ingrese el área en metros cuadrados (m²). Ajuste precios o rendimiento si lo desea.</p>
+
+      <div class="row">
+        <label>Área (m²)</label>
+        <input id="area" type="number" min="0" value="50" />
+      </div>
+
+      <div class="row">
+        <label>Producto</label>
+        <select id="producto">
+          <option value="invemanto">Invemanto (Manto)</option>
+          <option value="pintura">Pintura impermeabilizante Elastomérica</option>
+        </select>
+      </div>
+
+      <div id="presentaciones-container">
+        <!-- Dynamic product presentations inserted here -->
+      </div>
+
+      <div class="row">
+        <label>Mano de obra</label>
+        <select id="manoobra">
+          <!-- Options populated dynamically based on product -->
+        </select>
+      </div>
+
+      <div class="row">
+        <button id="calcular">Calcular presupuesto y enviar por WhatsApp</button>
+      </div>
+
+      <div id="resultado" class="resultado" aria-live="polite"></div>
+    </section>
+
+    <section class="productos-list">
+      <h2>Productos</h2>
+      <div class="product">
+        <h3>Invemanto</h3>
+        <ul>
+          <li>Invemanto 9 capas (incluye pega manto)</li>
+          <li>Invemanto 7 capas (incluye pega manto)</li>
+          <li>Invemanto 5 capas (incluye pega manto)</li>
+          <li>Kit tapa goteras (1/4 pega manto + 10 parchos 15x15 cm) — sin rendimiento especificado</li>
+        </ul>
+      </div>
+
+      <div class="product">
+        <h3>Pintura impermeabilizante Elastomérica</h3>
+        <ul>
+          <li>Cuñete 5/1</li>
+          <li>Cuñete 4/1</li>
+          <li>Galón</li>
+          <li>Kit cuñete 4/1 (con 18 m² de malla poliéster)</li>
+          <li>Kit galón 1/1 (con 4.5 m² de malla poliéster)</li>
+          <li>Malla poliéster (m²)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Reemplaza <code>+57XXXXXXXXX</code> por tu número de WhatsApp en el archivo <code>script.js</code>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
