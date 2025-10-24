@@ -16,7 +16,7 @@ const DATA = {
   ],
   manoobra: {
     pintura: { label: 'Mano de obra aplicación Pintura impermeabilizante a dos manos', price_per_m2: 1.30, note: 'Desde $1.30 x M2. Previa inspección' },
-    invemanto: { label: 'Mano de obra colocación de Invemanto', price_per_m2: 2.50, note: 'Desde $2.50 x M2. Previa inspección' }    
+    invemanto: { label: 'Mano de obra colocación de Invemanto', price_per_m2: 2.50, note: 'Desde $2.50 x M2. Previa inspección' }
   }
 };
 
@@ -36,11 +36,11 @@ function init(){
   calcularBtn.addEventListener('click', calcularYEnviar);
 }
 
-function renderPresentaciones(){
+function renderPresentaciones() {
   const prod = productoSelect.value;
   presentacionesContainer.innerHTML = '';
   const list = DATA[prod];
-  list.forEach(item=>{
+  list.forEach(item => {
     const div = document.createElement('div');
     div.className = 'presentacion';
     div.innerHTML = `
@@ -57,14 +57,24 @@ function renderPresentaciones(){
     presentacionesContainer.appendChild(div);
   });
 
-  // Mano de obra condicional
+  // ----- 👇 NUEVO BLOQUE DE MANO DE OBRA -----
   manoobraSelect.innerHTML = '';
+
+  // Opción 1: con mano de obra (automática)
   const mo = DATA.manoobra[prod];
-  const opt = document.createElement('option');
-  opt.value = JSON.stringify(mo);
-  opt.textContent = `${mo.label} — ${mo.note}`;
-  manoobraSelect.appendChild(opt);
+  const opt1 = document.createElement('option');
+  opt1.value = JSON.stringify(mo);
+  opt1.textContent = `${mo.label} — ${mo.note}`;
+  manoobraSelect.appendChild(opt1);
+
+  // Opción 2: sin mano de obra
+  const sinMO = { label: 'Sin mano de obra (solo materiales)', price_per_m2: 0, note: 'Costo mano de obra = $0' };
+  const opt2 = document.createElement('option');
+  opt2.value = JSON.stringify(sinMO);
+  opt2.textContent = sinMO.label;
+  manoobraSelect.appendChild(opt2);
 }
+
 
 function calcularYEnviar(){
   const prod = productoSelect.value;
