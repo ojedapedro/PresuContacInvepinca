@@ -1,9 +1,9 @@
 // Datos iniciales (puedes editar precios y rendimiento desde aquí)
 const DATA = {
   invemanto: [
-    { id: 'inv9', name: 'Invemanto 9 capas (incluye pega manto)', price: 120, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
-    { id: 'inv7', name: 'Invemanto 7 capas (incluye pega manto)', price: 95, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
-    { id: 'inv5', name: 'Invemanto 5 capas (incluye pega manto)', price: 75, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
+    { id: 'inv9', name: 'Invemanto 9 capas (incluye pega manto)', price: 18.90, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
+    { id: 'inv7', name: 'Invemanto 7 capas (incluye pega manto)', price: 13.90, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
+    { id: 'inv5', name: 'Invemanto 5 capas (incluye pega manto)', price: 11.50, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
     { id: 'kit-tapa', name: 'Kit tapa goteras (1/4 pega manto + 10 parchos 15x15cm)', price: 18, rendimiento: null, note: 'Sin rendimiento especificado' }
   ],
   pintura: [
