@@ -4,14 +4,14 @@ const DATA = {
     { id: 'inv9', name: 'Invemanto 9 capas (incluye pega manto)', price: 18.90, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
     { id: 'inv7', name: 'Invemanto 7 capas (incluye pega manto)', price: 13.90, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
     { id: 'inv5', name: 'Invemanto 5 capas (incluye pega manto)', price: 11.50, rendimiento: null, note: 'Manto - rendimiento variable, especificar área' },
-    { id: 'kit-tapa', name: 'Kit tapa goteras (1/4 pega manto + 10 parchos 15x15cm)', price: 18, rendimiento: null, note: 'Sin rendimiento especificado' }
+    { id: 'kit-tapa', name: 'Kit tapa goteras (1/4 pega manto + 10 parchos 15x15cm)', price: 16, rendimiento: null, note: 'Sin rendimiento especificado' }
   ],
   pintura: [
     { id: 'cuñete5', name: 'Cuñete 5/1', price: 80, rendimiento: 20, note: 'Rendimiento aproximado 20 m²' },
     { id: 'cuñete4', name: 'Cuñete 4/1', price: 65, rendimiento: 16, note: 'Rendimiento aproximado 16 m²' },
     { id: 'galon', name: 'Galón', price: 22, rendimiento: 5, note: 'Rendimiento aproximado 5 m²' },
-    { id: 'kit-cun4', name: 'Kit cuñete 4/1 (con 18 m² de malla poliéster)', price: 120, rendimiento: 18, note: 'Incluye malla 18 m²' },
-    { id: 'kit-gal1', name: 'Kit galón 1/1 (con 4.5 m² de malla poliéster)', price: 36, rendimiento: 4.5, note: 'Incluye malla 4.5 m²' },
+    { id: 'kit-cun4', name: 'Kit cuñete 4/1 (con 18 m² de malla poliéster)', price: 167, rendimiento: 18, note: 'Incluye malla 18 m²' },
+    { id: 'kit-gal1', name: 'Kit galón 1/1 (con 4.5 m² de malla poliéster)', price: 44, rendimiento: 4.5, note: 'Incluye malla 4.5 m²' },
     { id: 'malla', name: 'Malla poliéster (m²)', price: 4.5, rendimiento: 1, note: 'Precio por m²' }
   ],
   manoobra: {
