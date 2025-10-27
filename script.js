@@ -7,7 +7,7 @@ const DATA = {
     { id: 'kit-tapa', name: 'Kit tapa goteras (1/4 pega manto + 10 parchos 15x15cm)', price: 16, rendimiento: null, note: 'Sin rendimiento especificado' }
   ],
   pintura: [
-    { id: 'cuñete5', name: 'Cuñete 5/1', price: 80, rendimiento: 20, note: 'Rendimiento aproximado 20 m²' },
+    { id: 'cuñete5', name: 'Cuñete 5/1', price: 156, rendimiento: 20, note: 'Rendimiento aproximado 20 m²' },
     { id: 'cuñete4', name: 'Cuñete 4/1', price: 125, rendimiento: 16, note: 'Rendimiento aproximado 16 m²' },
     { id: 'galon', name: 'Galón', price: 34, rendimiento: 5, note: 'Rendimiento aproximado 5 m²' },
     { id: 'kit-cun4', name: 'Kit cuñete 4/1 (con 18 m² de malla poliéster)', price: 167, rendimiento: 18, note: 'Incluye malla 18 m²' },
