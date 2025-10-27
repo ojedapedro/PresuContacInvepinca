@@ -8,8 +8,8 @@ const DATA = {
   ],
   pintura: [
     { id: 'cuñete5', name: 'Cuñete 5/1', price: 80, rendimiento: 20, note: 'Rendimiento aproximado 20 m²' },
-    { id: 'cuñete4', name: 'Cuñete 4/1', price: 65, rendimiento: 16, note: 'Rendimiento aproximado 16 m²' },
-    { id: 'galon', name: 'Galón', price: 22, rendimiento: 5, note: 'Rendimiento aproximado 5 m²' },
+    { id: 'cuñete4', name: 'Cuñete 4/1', price: 125, rendimiento: 16, note: 'Rendimiento aproximado 16 m²' },
+    { id: 'galon', name: 'Galón', price: 34, rendimiento: 5, note: 'Rendimiento aproximado 5 m²' },
     { id: 'kit-cun4', name: 'Kit cuñete 4/1 (con 18 m² de malla poliéster)', price: 167, rendimiento: 18, note: 'Incluye malla 18 m²' },
     { id: 'kit-gal1', name: 'Kit galón 1/1 (con 4.5 m² de malla poliéster)', price: 44, rendimiento: 4.5, note: 'Incluye malla 4.5 m²' },
     { id: 'malla', name: 'Malla poliéster (m²)', price: 4.5, rendimiento: 1, note: 'Precio por m²' }
