@@ -70,9 +70,9 @@ h1 {
 
 .row input[type="number"],
 .row select {
-  flex: 1;
+  flex: 0.5;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #f0f7ff;
   color: #1a1a2e;
