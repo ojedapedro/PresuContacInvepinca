@@ -1,8 +1,8 @@
 :root {
   --bg: #ADD8F5; /* azul claro de fondo */
   --accent: #ADF5EE; /* acento turquesa suave */
-  --muted: #ADB4F5; /* texto y detalles lavanda azulados */
-  --card: #dbe8fa; /* tono claro derivado del fondo para contraste */
+  --muted: #2b2b3c; /* texto oscuro para buena legibilidad */
+  --card: #dbe8fa; /* fondo de tarjetas */
 }
 
 * {
@@ -22,7 +22,7 @@ header.hero {
   align-items: center;
   gap: 16px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 header.hero .logo {
@@ -37,12 +37,12 @@ header.hero .logo {
 
 h1 {
   margin: 0;
-  color: var(--accent);
+  color: #1a1a2e; /* fuerte contraste */
 }
 
 .subtitle {
   margin: 0.2rem 0 0;
-  color: #9fbfc0;
+  color: #3d3d4f;
 }
 
 .iframe-section,
@@ -64,6 +64,8 @@ h1 {
 
 .row label {
   min-width: 140px;
+  color: #1a1a2e;
+  font-weight: 600;
 }
 
 .row input[type="number"],
@@ -73,22 +75,23 @@ h1 {
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #f0f7ff;
-  color: #333;
+  color: #1a1a2e;
 }
 
 button#calcular {
   background: var(--accent);
-  color: #033a3a;
+  color: #0a2b2b;
   padding: 10px 16px;
   border-radius: 10px;
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
 button#calcular:hover {
-  background: #c5f9f3;
+  background: #b6fff4;
+  color: #000;
 }
 
 .resultado {
@@ -96,7 +99,8 @@ button#calcular:hover {
   padding: 12px;
   background: #ebf6ff;
   border-radius: 8px;
-  color: #1a1a1a;
+  color: #1a1a2e;
+  font-weight: 500;
 }
 
 .presentacion {
@@ -106,7 +110,8 @@ button#calcular:hover {
   padding: 8px;
   border-radius: 8px;
   margin: 8px 0;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
+  color: #2b2b3c;
 }
 
 .presentacion .left {
@@ -121,7 +126,7 @@ button#calcular:hover {
 
 .small {
   font-size: 0.9rem;
-  color: var(--muted);
+  color: #3d3d4f;
 }
 
 .products-grid {
@@ -134,6 +139,7 @@ footer {
   max-width: 1100px;
   margin: 0 auto;
   padding: 8px;
-  color: #6f7ba5;
+  color: #1a1a2e;
   text-align: center;
+  font-weight: 500;
 }
